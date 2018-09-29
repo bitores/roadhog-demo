@@ -19,7 +19,7 @@ $.ajax({
     url: "/api/users",
     method: "post",
     data: {
-        id: 1
+        id: 143534
     },
     success: function (result) {}
 });

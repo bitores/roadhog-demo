@@ -15,7 +15,10 @@ export default {
     },
 
     'POST /api/users': (req, res) => {
-        const id = parseInt(req.query.id);
+        // req.body 解析 post 参数
+        // req.query 解析 get 参数
+        // req.params 解析 restful风格url中的参数
+        const id = parseInt(req.body.id);
         switch (id) {
             case 1:
                 res.json({
